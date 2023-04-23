@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1f242d;
+  background-size: 100%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color: #0ef;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-bottom: 200vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px ;
+}
+
+input[type='text'] {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: poppins;
+  font-weight: 500;
+  border: 2px solid #0ef;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #fff;
+}
+
+button[type='submit'], i {
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #0ef;
+  font-size: 25px;
+  font-family: poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+i:hover{
+  color: black;
+ 
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem 35rem 1rem 35rem ;
+  border: 2px solid #0ef;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #0ef;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+border-radius: 50%;
+  margin: 0.5rem;
+  box-shadow: 0 0 5px #0ef;
+  animation: breathing 4s infinite ease-in-out;
+}
+@keyframes breathing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 20px 20px 0 20px;
+  padding: 15px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  margin: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin: 0.25rem;
+  padding: 5px;
 }
